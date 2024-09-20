@@ -1,4 +1,4 @@
-var todos = [];
+var todos = [] ;
 var formId = document.querySelector('#formId');
 var listGroup = document.querySelector('.list-group');
 var hideShow = document.querySelector('#hideShow');
@@ -86,7 +86,7 @@ formId.addEventListener("submit", function (e){
        if(todoValue == ''){
 		  alert("Please enter todo name");  
 	   } else {
-         todos.push({
+         todos?.push({
 		   value:todoValue,
 		   completed:false,
 	     });
