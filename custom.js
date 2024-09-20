@@ -55,7 +55,7 @@ function createElement(todoValue, index){
 
 // Rendor TodoList
 function rendorList(todosList){
-	   if(todosList.length !==0){
+	   if(todosList?.length !==0){
 		todosList.forEach((todo, index)=>{
 		var li = createElement(todo.value, index);
 		listGroup.appendChild(li);
