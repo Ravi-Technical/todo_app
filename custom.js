@@ -74,8 +74,7 @@ function rendorList(todosList){
 // Check local storage data
 let storedData = JSON.parse(localStorage.getItem('todo'));
 
-if(storedData.length !==0){
-	
+if(storedData?.length !==0){
 	todos = storedData;
     rendorList(todos);
 } else {
