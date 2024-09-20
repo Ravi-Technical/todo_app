@@ -38,7 +38,7 @@ function createElement(todoValue, index){
 		
 	 icon.addEventListener('click', function(event){
 		 event.stopPropagation();
-		event.target.parentElement.remove();
+		 event.target.parentElement.remove();
 		//todos.splice(index, 1);
 		for(let i=index; i<todos.length; i++){
 			todos[i] = todos[i+1];
@@ -56,7 +56,7 @@ function createElement(todoValue, index){
 // Rendor TodoList
 function rendorList(todosList){
 	   if(todosList?.length !==0){
-		todosList.forEach((todo, index)=>{
+		todosList?.forEach((todo, index)=>{
 		var li = createElement(todo.value, index);
 		listGroup.appendChild(li);
 		if(todo.completed){
