@@ -7,7 +7,7 @@ var hideShow = document.querySelector('#hideShow');
 // Not found
 function notFound(){
   var notFound = document.querySelector('.notFound');
-   if(todos.length == 0){
+   if(todos?.length == 0){
 	  notFound.style.display="block"; 
    } else {
 	   notFound.style.display="none";
