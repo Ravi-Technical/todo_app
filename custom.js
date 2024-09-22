@@ -19,6 +19,9 @@ function createElement(todoValue, index){
 	 var li = document.createElement('li');
 	 li.setAttribute('class', 'list-group-item');
 	 li.addEventListener('click', function(e){
+		debugger
+		if(todos !==null && todos !== undefined){
+			
 		if(todos[index]?.completed){
 			 //alert("your task not yet complete?");
 			li.classList.remove('sucess');
@@ -27,6 +30,7 @@ function createElement(todoValue, index){
 			 //alert("Are you sure task has been completed?");
 			 li.classList.add('sucess');
 			 todos[index].completed = true;
+		  }
 		}
 		 
 		localStorage.setItem('todo', JSON.stringify(todos));
